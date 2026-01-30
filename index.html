@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weapon Ball Stats</title>
+    <link rel="stylesheet" href="./style.css"></head>
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <script src="./index.js"></script>
+<body>
+    <div id="headers">
+        <h1>Weapon Ball Hub</h1>
+    </div>
+    <hr>
+    <div id="fightSettings" class="unselectable">
+        <div id="playerBox">
+            <div class="player"><label>Select Player 1</label>
+                <!--<div class="playerSetting left">S</div>-->
+                <!--<div class="playerSetting right">G</div>-->
+            </div>
+            <p>VS</p>
+            <div class="player"><label>Select Player 2</label>
+                <!--<div class="playerSetting left">S</div>-->
+                <!--<div class="playerSetting right">G</div>-->
+            </div>
+        </div>
+        <div id="startFight" class="fight" onclick="search()">Search</div>
+        <div id="selectContainer"></div>
+        <p>Drag and drop the weapon balls to search for fights (sorry if the dragging visibility is inconsistent)</p>
+    </div>
+    <hr>
+    <div id="viewer" style="display: none;">
+        <div id="browser">
+        </div>
+        <div class="shorts-wrapper" id="yt-player">
+            Loading
+        </div>
+    </div>
+
+</body>

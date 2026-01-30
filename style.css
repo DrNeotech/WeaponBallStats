@@ -1,0 +1,202 @@
+body {
+    background-color: #fdf5e6;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.3rem;
+    color: #333333;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+#fightSettings {
+    text-align: center;
+}
+
+#selectContainer {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.ball {
+    border: 2px solid #333333;
+    border-radius: 12px;
+    padding: 8px;
+    width: 150px;
+    min-width: 90px;
+    max-width: 150px;
+    margin-bottom: 1px;
+    font-size: 19px;
+    text-align: center;
+    flex: 1 1 45px;
+}
+
+#playerBox {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.player {
+    border: 2px solid #333333;
+    text-align: left;
+    border-radius: 12px;
+    padding: 10px;
+    width: 200px;
+    max-width: 200px;
+    margin-bottom: 4px;
+    font-size: 24px;
+    text-align: center;
+    flex: 1 1 100px;
+    position: relative;
+}
+
+.unselectable {
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none;
+  user-select: none; 
+  cursor: default;
+}
+
+#viewer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#viewer > div {
+    flex: 1;
+}
+
+#browser {
+    background-color: #284c94;
+    padding: 8px 10px;
+    margin-left: 40%;
+    width: 460px;
+    min-width: fit-content;
+    max-height: 640px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 18px;
+    box-sizing: border-box;   
+}
+
+.browserItem {
+    border: 2px solid #333333;
+    border-radius: 14px;
+    width: 400px;
+    max-width: 100%;
+    background-color: #3863b9;
+    margin: 6px auto;
+    box-sizing: border-box;
+}
+
+.fight {
+    border: 2px solid #333333;
+    border-radius: 12px;
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+    background-color: #c7b5ae;
+    display: inline-block;
+    width: auto;
+}
+
+.selected {
+    border-color: 4px solid #a90000;
+}
+
+.playerSetting {
+    position: absolute;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    bottom: 0;
+    border: 2px solid #333333;
+    width: 20px;
+    height: 20px;
+    border-radius: 16px;
+}
+
+.left { left: 0; }
+
+.right { right: 0; }
+
+.shorts-wrapper {
+    aspect-ratio: 9 / 16;
+    width: 360px;
+    height: 640px;
+    max-width: 100%;
+    border: 5px solid #296f00;
+    border-radius: 18px;
+    margin: 0 auto;
+    margin-right:40%;
+    text-align: center;
+    font-size: 3.4em;
+    background-color: #a9a9a9;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 60px;
+  aspect-ratio: 4;
+  background: radial-gradient(circle closest-side,#000 90%,#0000) 0/calc(100%/3) 100% space;
+  clip-path: inset(0 100% 0 0);
+  animation: l1 1s steps(4) infinite;
+}
+@keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}
+
+.shorts-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+iframe {
+    width: 100%; 
+    height: 300px; 
+}
+
+.any { background-color: #ffffff;}
+.grimoire { background-color: #8e8395;}
+.unarmed { background-color: #cfcfcf; }
+.scepter { background-color: #ffb4e7; }
+.staff { background-color: #3779fe;}
+.scythe { background-color: #ac55f6; }
+.duplicator { background-color: #fb01f0; }
+.hammer { background-color: #e15e85; }
+.axe { background-color: #d11300; }
+.flail { background-color: #fda490; }
+.shield { background-color: #b78001; }
+.boomerang { background-color: #cbbe00; }
+.crossbow { background-color: #7bb706; }
+.katana { background-color: #81fdbe;}
+.speedy { background-color: #ff1802; }
+.lance { background-color: #fce59e; }
+.splodey { background-color: #ff9e03; }
+.bow { background-color: #fcfe0f; } 
+.flask { background-color: #029a08; }
+.orbital { background-color: #009fab; }
+.sword { background-color: #ff725b; }
+.slammy { background-color: #c68100; }
+.wrench { background-color: #fba713; }
+.shuriken { background-color: #8c8400; }
+.dagger { background-color: #04fd0c; } 
+.spear { background-color: #00e4fd; }
+.grower { background-color: #00fe0a; }
+.lazer { background-color: #387aff; }
+.orbislam {background: linear-gradient(to right, #009fab 0%, #009fab 50%, #c68100 50%, #c68100 100%);} /* maybe give an alternate for descriptions or something with more gradient */
+.growerslam {background: linear-gradient(to right, #00fe0a 0%, #00fe0a 50%, #c68100 50%, #c68100 100%);} 
